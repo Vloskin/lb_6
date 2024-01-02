@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Левая башня -->
-    <View
-        android:id="@+id/towerView"
-        android:layout_width="50dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:background="#808080" />
+    <Button
+        android:id="@+id/firsAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="firstAnim"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Яблоко -->
+    <Button
+        android:id="@+id/secondAnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="secondAnim"
+        />
+
     <ImageView
-        android:id="@+id/appleImageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/apple"
-        android:layout_toEndOf="@id/towerView"
-        android:layout_marginTop="20dp" />
-</RelativeLayout>
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="64dp"
+        android:adjustViewBounds="true"
+        android:padding="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
